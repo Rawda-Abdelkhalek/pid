@@ -45,7 +45,7 @@ void setup() {
 
 void loop() {
   // Read potentiometer value and convert to angle
-  currentAngle = map(analogRead(steeringPotPin), 0, 1023, -45, 45); // Adjust range based on your potentiometer
+  currentAngle = map(analogRead(steeringPotPin), 0, 1023, -87.5, 87.5); // Adjust range based on your potentiometer
 
   // Get wheel speed readings (optional)
   leftWheelSpeed = ...; // Implement your left wheel speed sensor calculation
