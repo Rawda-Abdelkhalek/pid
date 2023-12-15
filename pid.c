@@ -69,3 +69,9 @@ void loop() {
     analogWrite(motorSpeedPinA_Steering, 0);
     analogWrite(motorSpeedPinB_Steering, motorPowerB_Steering); // Right motor forward, left motor backward
   } else { // Center position
+  analogWrite(motorSpeedPinA_Wheels, motorPowerA_Wheels);
+    analogWrite(motorSpeedPinB_Wheels, motorPowerB_Wheels);
+    analogWrite(motorSpeedPinA_Steering, 0);
+    analogWrite(motorSpeedPinB_Steering, 0); // Both steering motors off
+  }
+}
